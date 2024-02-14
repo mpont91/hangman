@@ -18,6 +18,9 @@
     "@astrojs/svelte": "^4.0.3",
     "@astrojs/tailwind": "^5.0.2",
     "@astrojs/vue": "^3.0.1",
+    "@capacitor/android": "^5.7.0",
+    "@capacitor/core": "^5.7.0",
+    "@capacitor/ios": "^5.7.0",
     "@nanostores/react": "^0.7.1",
     "@nanostores/vue": "^0.10.0",
     "@types/react": "^18.2.29",
@@ -31,6 +34,7 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@capacitor/cli": "^5.7.0",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
     "@vue/eslint-config-typescript": "^12.0.0",
