@@ -1,47 +1,64 @@
-# Astro Starter Kit: Minimal
+![img.png](public/application.webp)
 
-```sh
-npm create astro@latest -- --template minimal
-```
+# The Hangman
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+Hangman is a classic word-guessing game that tests your vocabulary and spelling skills. Guess the hidden word by suggesting letters, and try to reveal the complete word before running out of attempts.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Features
 
-## 🚀 Project Structure
+* Interactive Experience: Enjoy a simple, user-friendly interface that makes the game 
+engaging and fun.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Technologies
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **[Astro](https://astro.build/):** A framework for building fast, modern websites with ease.
+- **[Vue](https://vuejs.org/):** A progressive JavaScript framework for building user interfaces.
+- **[Tailwind CSS](https://tailwindcss.com/):** A utility-first CSS framework for creating customizable and modern user interfaces.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Hosted on Vercel
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+This project is hosted on Vercel, a platform for deploying and hosting web 
+applications. You can visit it here: [hangman.mpont91.com](https://hangmang.mpont91.com)
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Installation and Setup
 
-## 🧞 Commands
+To clone and run this application on your local environment, follow these steps:
 
-All commands are run from the root of the project, from a terminal:
+1. **Clone the repository:**
+   ```sh
+    git clone https://github.com/yourusername/hangman.git
+    cd hangman
+    ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Run the application:**
+   ```sh
+   npm run dev
+   ```
+4. **Visit in your browser:** 
+Open http://localhost:3000 in your browser to see the 
+   application in action.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Contribution
 
-## 👀 Want to learn more?
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1. **Fork the repository**
+2. **Create a branch for your feature or bug fix (`git checkout -b feature/your-feature`)**
+3. **Commit your changes (`git commit -am 'Add new feature'`)**
+4. **Push to the branch (`git push origin feature/your-feature`)**
+5. **Create a new Pull Request**
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions or comments, you can reach me at [mpont91@gmail.com](mailto:mpont91@gmail.com)
+
+---
+
+Thank you for using Hangman! We hope you enjoy playing and challenging your vocabulary skills.

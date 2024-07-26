@@ -6,7 +6,7 @@
       <img
         v-if="mistakes > 0"
         class="mx-auto"
-        :src="`/public/hangman/${mistakes}.png`"
+        :src="`/hangman/${mistakes}.png`"
         :alt="`${mistakes} mistake`"
         height="353px"
       />
