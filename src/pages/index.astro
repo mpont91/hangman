@@ -1,16 +1,17 @@
 ---
-
+import PasswordDiscovery from '../components/PasswordDiscovery.vue'
+import DrawingHangman from '../components/DrawingHangman.vue'
+import PickLetter from '../components/PickLetter.vue'
+import IndexLayout from '../layouts/IndexLayout.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<IndexLayout>
+  <main
+    class="h-[100svh] p-4 md:p-12 xl:p-12 flex flex-col items-center justify-between"
+  >
+    <h1 class="text-4xl text-white text-center">The Hangman</h1>
+    <PasswordDiscovery client:only="vue" />
+    <DrawingHangman client:only="vue" />
+    <PickLetter client:only="vue" />
+  </main>
+</IndexLayout>

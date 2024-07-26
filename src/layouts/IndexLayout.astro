@@ -1,0 +1,89 @@
+---
+import SpeedInsights from '@vercel/speed-insights/astro'
+---
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="author" content="Marc Pont" />
+
+    <link rel="canonical" href="https://mpont91.hangman.com/" />
+
+    <meta
+      name="description"
+      content="Play the classic Hangman game online for free! Challenge yourself with endless word puzzles and improve your vocabulary. Start playing now!"
+    />
+    <meta property="og:title" content="The Hangman" />
+    <meta
+      property="og:description"
+      content="Play the classic Hangman game online for free! Challenge yourself with endless word puzzles and improve your vocabulary. Start playing now!"
+    />
+    <meta property="og:image" content="https://mpont91.hangman.com/logo.png" />
+    <meta property="og:url" content="https://mpont91.hangman.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Hangman" />
+    <meta
+      name="twitter:description"
+      content="Play the classic Hangman game online for free! Challenge yourself with endless word puzzles and improve your vocabulary. Start playing now!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://mpont91.hangman.com/logo.webp"
+    />
+    <meta name="theme-color" content="#000000" />
+
+    <title>The Hangman</title>
+  </head>
+  <style>
+    :root {
+      --foreground-rgb: 0, 0, 0;
+      --background-start-rgb: 214, 219, 220;
+      --background-end-rgb: 255, 255, 255;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+      }
+    }
+
+    body {
+      color: rgb(var(--foreground-rgb));
+      background: linear-gradient(
+          to bottom,
+          transparent,
+          rgb(var(--background-end-rgb))
+        )
+        rgb(var(--background-start-rgb));
+    }
+  </style>
+  <body>
+    <SpeedInsights />
+    <slot />
+  </body>
+</html>
